@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../assets/Birthday/logo.png";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const Homepage = () => {
   const [loading, setLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
 
-  window.addEventListener("load", () => {
+  useEffect(() => {
     setTimeout(() => {
       setFadeOut(true);
     }, 2500);
@@ -18,7 +18,7 @@ const Homepage = () => {
     setTimeout(() => {
       setLoading(false);
     }, 2800);
-  });
+  }, []);
 
   return (
     <Wrapper>
