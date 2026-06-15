@@ -11,13 +11,18 @@ const Homepage = () => {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const fadeTimer = setTimeout(() => {
       setFadeOut(true);
-    }, 2500);
+    }, 2000);
 
-    setTimeout(() => {
+    const loadingTimer = setTimeout(() => {
       setLoading(false);
-    }, 2800);
+    }, 2200);
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(loadingTimer);
+    };
   }, []);
 
   return (
