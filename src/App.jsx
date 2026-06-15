@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         <Route index element={<Homepage />} />
         <Route path="/video_page" element={<Video />} />
-        <Route path="/new_month_wishes" element={<Message />} />
+        <Route path="/birthday_wishes" element={<Message />} />
       </Routes>
     </BrowserRouter>
   );

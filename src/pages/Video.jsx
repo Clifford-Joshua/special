@@ -1,21 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import Video1 from "../assets/Videos/Video2.mp4";
+import Video2 from "../assets/Videos/Beauty.mp4";
+import User1 from "../assets/Birthday/HomeUser1.jpeg";
+import User2 from "../assets/Birthday/HomeUser2.jpeg";
+import { Link, useNavigate } from "react-router-dom";
+import User3 from "../assets/Birthday/HomeUser3.jpeg";
+import User5 from "../assets/Birthday/HomeUser5.jpeg";
+import User4 from "../assets/Birthday/HomeUser4.jpg";
 import { useTypewriter } from "react-simple-typewriter";
-import { FaArrowRight } from "react-icons/fa";
-import BackgroundImage from "../assets/VideoBackground.jpg";
-import Video1 from "../assets/Video1.mp4";
-import Video2 from "../assets/Infinity.mp4";
-import User1 from "../assets/HomeUser1.jpg";
-import User2 from "../assets/HomeUser2.jpg";
-import User3 from "../assets/HomeUser3.jpg";
-import User4 from "../assets/HomeUser4.jpg";
-import User5 from "../assets/HomeUser5.jpg";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import BackgroundImage from "../assets/Birthday/VideoBackground.jpg";
 
 const Video = () => {
+  const navigate = useNavigate();
+
   const [text] = useTypewriter({
     words: [
-      ` I’ll love you forever babe… Like and endless loop ♾️, I love you🌹 till infinity🥰`,
+      `Just a Friendly reminder, It's your birthday 🎂! so try and have fun. I’ll love you forever babe… Like and endless loop 🌹🥰`,
     ],
     loop: 0,
   });
@@ -28,7 +30,7 @@ const Video = () => {
         <div
           className="w-full h-[100%] absolute"
           style={{
-            background: `url(${BackgroundImage})center/cover no-repeat`,
+            background: `url(${BackgroundImage})`,
           }}
         ></div>
 
@@ -41,18 +43,22 @@ const Video = () => {
             </div>
 
             <h1 className="capitalize dancing-script text-[2rem] text-amber-300 text-shadow-[1px_1px_5px_black]">
-              My Sweet Baby Girl 💖👑,
+              My Sweet Pumpkin 💖🥳,
             </h1>
 
             <div className="flex flex-col gap-[1.5rem]">
               <p className="playfair-display text-[0.9rem] text-white">
-                I honestly don’t even know where to begin because every time I
-                think of you, my heart overflows with so much emotion I can
-                barely put it into words 😩❤️. You are the most beautiful part
-                of my life — not just on the outside 😍, but deep within your
-                soul 🌸. You carry a light 🌟 that brightens even my darkest
-                days 🌧️➡️☀️, a warmth 🔥 that reaches into the coldest parts of
-                me and melts every doubt, every fear, every worry 😌💗.
+                Today is a very special day because it's the day someone truly
+                amazing came into this world. 🎉🎈🥳🌹 I honestly don't think
+                words can fully express how grateful I am for you. 🥺 You bring
+                so much happiness 😊💞, warmth 🤗💕, peace 🕊️💖, and love ❤️‍🔥💘
+                into my life. Every conversation 💬💕, every laugh 😂❤️, every
+                moment ⏳💞 we share means more to me than you probably realize.
+                🥰✨ Seeing your special day arrive fills my heart with so much
+                joy 😍🎉 because it's a reminder that the world was blessed 🌍✨
+                with someone as beautiful 🌹😍, kind 💕🤗, caring 💖🥺, and
+                incredible ✨👑 as you. 💝❤️💞 You deserve to be celebrated
+                today 🎂🎉🎈🥳 and every single day 🌞🌙💕
               </p>
 
               <img
@@ -62,32 +68,33 @@ const Video = () => {
               />
 
               <p className="playfair-display text-[0.9rem] text-white">
-                You make me feel things I never knew I could feel 🥺💘. Like how
-                just the sound of your voice 🎶 can calm every storm inside me
-                🌪️. Or how your smile 😊 can turn a simple moment into magic ✨.
-                And those eyes? 👀 Don’t even get me started… I could get lost
-                in them forever and never want to be found 😍😮‍💨💞.
+                And while today is about celebrating your birthday, I also want
+                to take a moment to celebrate you. ❤️🥰✨ You are truly the most
+                beautiful lady I have ever known. 😍🌹💕 Not just because of
+                your gorgeous smile 😊💖, your beautiful eyes 👀✨, or the way
+                you light up every room you walk into 🌟❤️, but because your
+                beauty comes from your heart too. 💞🥺 You have a kind, loving,
+                caring, warm, heart that make you even more beautiful every day.
+                👑💝✨
               </p>
 
               <img
                 src={User5}
                 alt="user"
-                className="h-[250px] object-cover rounded-[10px]  drop-shadow-gray-500 shadow-[0px_0px_10px_black] "
+                className="h-[250px] object-cover  rounded-[10px]  drop-shadow-gray-500 shadow-[0px_0px_10px_black] "
               />
 
               <p className="playfair-display text-[0.9rem] text-white">
-                I love the way you laugh 😂, the way you playfully tease me 🙈
-                just to see me smile 😄. I love how you care 🥰, how your heart
-                is so big 💓, so soft 💕, so full of love 💖. Sometimes I sit
-                and wonder 🤔 how someone like me ended up with someone like you
-                — so rare 💎, so precious 💫, so perfect in all your
-                imperfections 👸. And the truth is, I still don’t have an
-                answer… but I’m endlessly thankful 🙏 that I get to love you 💘.
-                You’re not just my girlfriend 💏. You’re my peace 🕊️, my best
-                friend 👫, my soft place to land 🛌. My comfort on bad days 😣,
-                my favorite person on good ones 😄, and the one I want by my
-                side for everything in between 🫂. Life with you is like a
-                beautiful love song 🎵🎧 I never want to end 🥹❤️.
+                What I admire most about you is how hardworking and determined
+                you are. 💪❤️🔥 You keep pushing forward, even when things are
+                difficult. 🌷✨ You put your heart into what you do, and it
+                inspires me more than you know. 🥹💕 Watching you work towards
+                your goals, overcome challenges, and continue growing into an
+                even more amazing woman makes me so proud of you. 🌹🏆❤️ You
+                deserve every bit of happiness, success, love, and recognition
+                that comes your way because you work so hard for it. 🎉🎂💖🌟 I
+                hope you never forget how incredible you are and how much you
+                are appreciated, admired, and loved. 🥰❤️💞✨
               </p>
 
               <video
@@ -99,12 +106,11 @@ const Video = () => {
               ></video>
 
               <p className="playfair-display text-[0.9rem] text-white">
-                I want to be the reason you smile randomly during the day ☀️💫.
-                I want to be the one you think of when you hear a love song
-                🎶💕. I want to be your safe space 🏡, your cheerleader 📣, your
-                partner 🤝, your home 🛋️. I want to be the arms you run into
-                when life gets overwhelming 😔 and the voice that reminds you
-                how strong 💪, beautiful 🌷, and loved 💗 you truly are 🥹❤️.
+                Today, I celebrate your beauty 😍🌹, your strength 💪❤️, your
+                dedication 🔥✨, your kind heart 💖🤗, and everything that makes
+                you the wonderful woman you are. 👑💕💐 Keep shining, my
+                beautiful girl. ✨🌟💖 The world is brighter because you're in
+                it. 🌍❤️🥰😘💋
               </p>
 
               <img
@@ -113,12 +119,18 @@ const Video = () => {
                 className="h-[250px] object-cover rounded-[10px]  drop-shadow-gray-500 shadow-[0px_0px_10px_black] "
               />
               <p className="playfair-display text-[0.9rem] text-white">
-                If I could, I’d bottle up every sweet moment with you 🍯 — your
-                laughs 😂, your hugs 🤗, your sleepy eyes 😴, your kisses 😘 —
-                and keep them forever 🔒. You’re the kind of love I dreamed of
-                🌙 when I didn’t even know what love really was 💭💖. And now
-                that I’ve found you, I promise to protect 🛡️, cherish 🌹, and
-                adore you forevermore 🔐💘.
+                My love ❤️🥰, I just want you to know how much I truly love and
+                cherish you. 💖✨ You mean so much more to me than words could
+                ever explain. 💕 Every day, you bring happiness, comfort, and so
+                much love into my life, and I am incredibly grateful for you.
+                🥺❤️ You have a special place in my heart that no one else could
+                ever take. 💘🌹 Your smile brightens my days ☀️😊, your voice
+                brings me peace 🎶💞, and your love makes my life so much
+                better. ❤️‍🔥✨ No matter where life takes us, I hope you never
+                forget how deeply you are loved, appreciated, and cherished.
+                💝🥰 You are one of the greatest blessings in my life, and I
+                thank God for you every day. 🙏❤️✨ I love you more than you'll
+                ever know. ❤️😘💋🌹💕
               </p>
 
               <img
@@ -127,7 +139,7 @@ const Video = () => {
                 className="h-[250px] object-cover rounded-[10px]  drop-shadow-gray-500 shadow-[0px_0px_10px_black] "
               />
               <p className="playfair-display text-[0.9rem] text-white">
-                So don’t ever forget this: I’m proud of you 👏. I’m proud to
+                So don’t ever forget this, I’m proud of you 👏. I’m proud to
                 love you 🥰. I’m proud to be yours 💍. And no matter what life
                 throws at us 🌪️, you’ll always have me — completely, hopelessly,
                 madly ❤️‍🔥. Forever and always, Your person 💑💋❤️
@@ -151,12 +163,21 @@ const Video = () => {
               ></video>
             </div>
 
-            <Link
-              to={"/new_month_wishes"}
-              className="text-[1.4rem] capitalize text-amber-300 text-4xl font-bold drop-shadow-[0px_0px_7px_white]  flex animate-bounce mt-[1rem]"
-            >
-              <FaArrowRight />
-            </Link>
+            <div className="flex flex-row gap-4">
+              <button
+                onClick={() => navigate(-1)}
+                className="text-[1.4rem] capitalize text-amber-300 text-4xl font-bold drop-shadow-[0px_0px_7px_white]  flex animate-bounce mt-[1rem]"
+              >
+                <FaArrowLeft />
+              </button>
+
+              <Link
+                to={"/birthday_wishes"}
+                className="text-[1.4rem] capitalize text-amber-300 text-4xl font-bold drop-shadow-[0px_0px_7px_white]  flex animate-bounce mt-[1rem]"
+              >
+                <FaArrowRight />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

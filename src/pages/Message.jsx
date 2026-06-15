@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import CuteImage from "../assets/love.jpg";
-import User6 from "../assets/HomeUser6.jpg";
-import User7 from "../assets/HomeUser7.jpg";
-import BackgroundImage from "../assets/HomeUser4.jpg";
+import { useNavigate } from "react-router-dom";
+import CuteImage from "../assets/Birthday/love.jpeg";
+import User6 from "../assets/Birthday/HomeUser6.jpeg";
+import User7 from "../assets/Birthday/HomeUser7.jpeg";
+import BackgroundImage from "../assets/Birthday/HomeUser4.jpg";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Message = () => {
+  const navigate = useNavigate();
   return (
     <Wrapper>
       <div className="min-h-[100vh] relative">
@@ -16,15 +19,19 @@ const Message = () => {
           }}
         ></div>
         <div className="h-[100%] relative z-10 bg-[#0000005e] text-white p-[1rem] flex flex-col items-center justify-center gap-[1rem] poppins">
-          <h1 className="text-[1.5rem]">Happy New Month, My Love!</h1>
+          <h1 className="text-[1.5rem]">Happy Birthday, my love 🎂</h1>
 
           <p className="text-center text-[1rem]">
-            Happy New Month, My Sweet Strawberry 🍓❤️ A new month, a fresh start
-            — but my love for you stays the same, deep and endless 🥰. I pray
-            this month brings you peace, joy, laughter, and all the sweetness
-            your heart can hold 💫💐. You’re my favorite part of every day, and
-            this month, I’m loving you even louder 💋💖. Let’s make it beautiful
-            — together. I love you, always 💘🍓
+            On your special day, I wish you endless happiness 😊💕, good health
+            🌷✨, success in everything you do 🏆💖, and countless beautiful
+            moments that make you smile. 🌟🎁💐 May this new year of your life
+            bring you peace 🕊️❤️, joy 😍🌹, laughter 😂💕, and all the blessings
+            your heart desires. 🙏✨ You deserve nothing but the very best
+            because you are such a wonderful and special person. 👑💝 Thank you
+            for being you. ❤️🥰 Your kindness, love, and beautiful heart make
+            the world a better place. 💖🌍✨ Enjoy your day to the fullest, And
+            May all your dreams come true and may your heart always be filled
+            with happiness.
           </p>
 
           <div className="flex  gap-[0.5rem] items-center h-[60vh] w-[100%]">
@@ -49,15 +56,22 @@ const Message = () => {
               />
             </div>
           </div>
-          <p className="text-center text-[1rem]">Have a fun day 💖</p>
+          <p className="text-center text-[1rem]">
+            Happy Birthday once again, sweetheart. ❤️ Have a fun day 💖
+          </p>
+
+          <button
+            onClick={() => navigate(-1)}
+            className="text-[1.4rem] capitalize text-amber-300 text-4xl font-bold drop-shadow-[0px_0px_7px_white]  flex animate-bounce mt-[0.5rem] mb-[1rem]"
+          >
+            <FaArrowLeft />
+          </button>
         </div>
       </div>
     </Wrapper>
   );
 };
 
-const Wrapper = styled.div`
-
-`;
+const Wrapper = styled.div``;
 
 export default Message;
